@@ -1,3 +1,4 @@
+# This script will make the device sync to Intune every time it is run. You decide when setting the schedule in Intune how often this will occur.
 Try {
     # Get last time PushLaunch scheduled task was executed
     $PushInfo = Get-ScheduledTask | Where-Object {$_.TaskName -eq 'PushLaunch'} | Get-ScheduledTaskInfo
