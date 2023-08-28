@@ -129,7 +129,8 @@ Function Get-CorruptionStatus {
 
     # Initialize variables with a zero to track which may need to be remediated
     $RepairHealth = 0
-    #$RepairComponents = 0
+    # Skipping this since it gets triggered a lot by the detection script. Uncomment if you wish to use it.
+    # $RepairComponents = 0
     $RepairSFC = 0
 
     Try {
